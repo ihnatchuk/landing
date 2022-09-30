@@ -1,0 +1,68 @@
+.form{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    
+    &__label{
+        background: #FFFFFF;
+        box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
+        border-radius: 29px;
+        height: 58px;
+        width: 90%;
+
+        &--active{
+            box-shadow: 0px 17px 42px rgba(187, 77, 13, 0.25);
+        }
+        transition: all 0.2s;
+
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 72px;
+    
+        &::before{
+            position: absolute;
+            top: 20px;
+            left: 28px;
+    
+            content: "";
+            display: block;
+            width: 24px;
+            height: 19px;
+            background-image: url(./../img/icons/mail.svg);
+            background-size: initial;
+        }
+    }
+
+    &__input{
+        flex-grow: 1;
+        margin-right: 5px;
+        &::placeholder{
+            color: #bbb;
+        }
+    
+    }
+}
+
+@media (max-width:767px) {
+
+    .form{
+        flex-direction: column;
+        &__label{
+            padding-left: 22px;            
+            width: 100%;
+            max-width: 455px;
+            margin-bottom: 20px;
+        
+            &::before{
+                display: none;
+            }
+        }
+    
+        &__input{
+            width:90%;
+        }
+    }
+}

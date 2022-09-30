@@ -1,0 +1,121 @@
+.cta{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    &__block{
+        background-color: #58BEBF;
+        color: #fff;
+    
+        border-radius: 20px;
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    
+    &__text{
+        width: 555px;
+        padding-left: 95px;
+        padding-right: 40px;
+    
+    
+       box-sizing: border-box;
+       display: flex;
+       flex-direction: column;
+        justify-content: center;
+    
+        background:
+         url(./../img/cta/Oval1.svg) top right no-repeat,
+         url(./../img/cta/Oval2.svg) bottom -180px left -186px no-repeat;
+    
+    
+        p{
+            width: 260px;
+        }
+    }
+    
+    
+    &__img {
+        margin-top: 80px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 0 20px 0 0;
+        box-shadow: 4px 20px 42px -2px rgba(0, 0, 0, 0.12);
+    
+    }
+    
+    &__buttons-row{
+        margin-top: 20px;
+        display: flex;
+        column-gap: 20px;
+    }
+}
+
+@media (max-width:1079px) {
+    .cta{
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        &__block{
+             align-items: center;
+             flex-direction: column-reverse;
+        }
+         
+        &__img{
+            margin-top: 0px;
+            padding: 20px 20px 0px 0px;
+        }
+
+        &__text{
+             width: 551px;
+             padding: 50px;
+             align-items: center;
+
+             background:
+             url(./../img/cta/Oval1.svg) top right no-repeat,
+             url(./../img/cta/Oval2.svg) bottom -180px left -186px no-repeat;
+        }
+        &__title{
+            margin-bottom: 20px;
+        }
+     }
+}
+
+@media (max-width:767px) {
+    .cta{
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        &__block{
+             align-items: center;
+             flex-direction: column-reverse;
+        }
+         
+        &__img{
+            max-width:90%;
+            img{
+                width:100%;
+            }
+            display: none;
+
+        }
+
+        &__text{
+            width: 100%;
+            padding: 20px;
+            align-items: center;
+
+             background:
+             url(./../img/cta/Oval1.svg) top -70px right -70px no-repeat,
+             url(./../img/cta/Oval2.svg) bottom -200px left -200px no-repeat;
+        }
+        &__title{
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        &__buttons-row{
+            flex-direction: column-reverse;
+            gap: 15px;
+        }
+     }
+}
+

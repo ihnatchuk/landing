@@ -1,0 +1,45 @@
+.img-card{
+    position: relative;
+    &__img{
+        border-radius: 20px 20px 0px 20px;
+    }
+    
+    &--rounded .img-card__img{
+        border-radius: 20px 20px 20px 20px;
+        margin-right: 32px;    
+    }
+
+    &__info{
+        position: absolute;
+        right: -60px;
+        bottom: 80px;
+        max-width: 305px;
+    }
+}
+
+
+@media (max-width:1079px) {
+    .img-card{
+        &__img{
+            height: 395px;
+            border-radius: 20px 20px 0px 20px;
+        }
+
+        &__info{
+            right: -30px;
+            bottom: 60px;
+            max-width: 235px;
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .img-card{
+    
+        &__info{
+            right: -20px;
+            bottom: 40px;
+            max-width: 235px;
+        }
+    }
+}
